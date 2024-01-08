@@ -1,57 +1,68 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
     background-color: black;
     color: #f6f6f6;
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
 main {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: fit-content;
 }
-strong {
-    color: #22d4fd;
-}
-.text {
+
+.main_conteudo {
+    width: 615px;
     display: flex;
     flex-direction: column;
-    height: fit-content;
-    width: 500px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 20px;
+    gap: 40px;
+    margin-right: 15px;
 }
-.text h1 {
+.main_conteudo_titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 36px;
+}
+.main_conteudo_texto {
     font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
-.text p {
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    text-align: justify;
-}
-.links {
-    width: 100%;
+.main_conteudo_links {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px
 }
-a {
-    display: inline-block;
-    padding: 20px;
-    width: 190px;
+.main_conteudo_links_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+}
+
+.main_conteudo_links_link {
+    width: 380px;
+    padding: 21px 0;
+    border: 2px solid #22d4fd;
     border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
     text-align: center;
     text-decoration: none;
-    background-color: #22d4fd;
-    color: #000;
-    font-weight: bold;
+    color: #f6f6f6;
 }
-a:hover {
-    background-color: #26badb;
+.main_conteudo_links_link:hover {
+    background-color: #1ab1d3;
 }
-img {
-    height: 400px;
+.titulo-destaque {
+    color: #22d4fd;
 }
