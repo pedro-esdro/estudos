@@ -137,3 +137,15 @@ body{
         width: auto;
     }
 }
+
+@media (max-width: 500px){
+    .apresentacao__conteudo__titulo {
+        font-size: 1.8em;
+    }
+    .apresentacao__links_subtitulo, .apresentacao__links__link {
+        font-size: 1.3em;
+    }
+    .apresentacao__links__link {
+        padding: 16px 0;
+    }
+}
