@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 * {
@@ -14,14 +18,103 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .principal {
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container_caixa {
+    margin: 0 6em;
+}
+
+.container_titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container_img {
+    margin: 1em 0 2em 0;
+}
+
+.container_botao {
+    display: block;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container_aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+}
+
+.secundario_img {
+    width: 80%;
+    margin: 0 6em;
+}
+
+.container_descricao {
+    padding: 0 2em 0 10em;
+}
+
+.descricao_titulo {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto {
+    color: var(--cinza-secundario);
+}
+
+.descricao_botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos_titulo {
+    font-size: 2.5em;
+}
+
+.dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: var(--branco-principal);
+    margin: 5em 0;
+}
+
+.lista_item {
+    font-size: 2em;
+    color: var(--branco-principal);
 }
